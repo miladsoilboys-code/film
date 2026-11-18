@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My 7 Links</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg,#101827,#202b40);
+  color:#fff;
+  font-family:Arial,sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.container{
+  width:90%;
+  max-width:850px;
+  text-align:center;
+}
+h1{font-size:32px;margin-bottom:10px}
+.subtitle{color:#aab6ca;margin-bottom:40px}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:18px;
+}
+.card{
+  background:#26354d;
+  border:1px solid #3a4a64;
+  border-radius:18px;
+  padding:28px 12px;
+  text-decoration:none;
+  color:white;
+  transition:.2s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  background:#354966;
+  border-color:#70a7ff;
+}
+.icon{font-size:42px;margin-bottom:15px}
+.name{font-size:17px;font-weight:bold}
+.all{
+  margin-top:35px;
+  padding:16px 35px;
+  border:0;
+  border-radius:30px;
+  background:#4c91ff;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.all:hover{background:#2675ec}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>MY 7 LINKS</h1>
+<div class="subtitle">My Personal AI & Development Dashboard</div>
+
+<div class="grid">
+
+<a class="card" href="https://chatgpt.com/" target="_blank">
+<div class="icon">🤖</div>
+<div class="name">ChatGPT</div>
+</a>
+
+<a class="card" href="https://claude.ai/chat/c51598a8-fb9f-4275-9f4c-8f4150978288" target="_blank">
+<div class="icon">🧠</div>
+<div class="name">Claude</div>
+</a>
+
+<a class="card" href="https://ollama.com/download" target="_blank">
+<div class="icon">🦙</div>
+<div class="name">Ollama</div>
+</a>
+
+<a class="card" href="https://dashboard.composio.dev/miladsoilboys_workspace/~/connect" target="_blank">
+<div class="icon">🔗</div>
+<div class="name">Composio</div>
+</a>
+
+<a class="card" href="https://dash.cloudflare.com/70192fdab610d36c11c3ab15f56199f1/home" target="_blank">
+<div class="icon">☁️</div>
+<div class="name">Cloudflare</div>
+</a>
+
+<a class="card" href="https://grok.com/c/0e7e0005-bbaa-48e2-b763-5a7ee6fa9e94?rid=507dfd0e-bf10-4505-8a49-8cd8501b68e2" target="_blank">
+<div class="icon">⚡</div>
+<div class="name">Grok</div>
+</a>
+
+<a class="card" href="https://github.com/" target="_blank">
+<div class="icon">🐙</div>
+<div class="name">GitHub</div>
+</a>
+
+</div>
+
+<button class="all" onclick="openAll()">
+🚀 OPEN ALL WEBSITES
+</button>
+
+</div>
+
+<script>
+function openAll(){
+  const links=[
+    "https://chatgpt.com/",
+    "https://claude.ai/chat/c51598a8-fb9f-4275-9f4c-8f4150978288",
+    "https://ollama.com/download",
+    "https://dashboard.composio.dev/miladsoilboys_workspace/~/connect",
+    "https://dash.cloudflare.com/70192fdab610d36c11c3ab15f56199f1/home",
+    "https://grok.com/c/0e7e0005-bbaa-48e2-b763-5a7ee6fa9e94?rid=507dfd0e-bf10-4505-8a49-8cd8501b68e2",
+    "https://github.com/"
+  ];
+
+  links.forEach(link=>window.open(link,"_blank"));
+}
+</script>
+
+</body>
+</html>
